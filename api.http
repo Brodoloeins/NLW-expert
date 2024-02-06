@@ -2,7 +2,19 @@ POST http://localhost:3333/polls
 Content-Type: application/json
 
 {
-    "title": "Vasco é o melhor?"
+    "title": "Vasco é o melhor?",
+    "options": ["Sim", "Claro"]
 }
 
 ###
+
+GET http://localhost:3333/polls/5e09167a-2585-432b-9f2e-01db312e13f6
+
+###
+
+POST http://localhost:3333/polls/5e09167a-2585-432b-9f2e-01db312e13f6/votes
+Content-Type: application/json
+
+{
+    "pollOptionId": "7474fc0d-5c44-4d86-a585-ab5f93fe16de"
+}
