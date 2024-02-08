@@ -3,18 +3,18 @@ Content-Type: application/json
 
 {
     "title": "Vasco é o melhor?",
-    "options": ["Sim", "Claro"]
+    "options": ["Sim", "Claro", "Com certeza"]
 }
 
 ###
 
-GET http://localhost:3333/polls/5e09167a-2585-432b-9f2e-01db312e13f6
+GET http://localhost:3333/polls/aba03d08-ca75-4adb-a653-4d3a863e386f
 
 ###
 
-POST http://localhost:3333/polls/5e09167a-2585-432b-9f2e-01db312e13f6/votes
+POST http://localhost:3333/polls/aba03d08-ca75-4adb-a653-4d3a863e386f/votes
 Content-Type: application/json
 
 {
-    "pollOptionId": "7474fc0d-5c44-4d86-a585-ab5f93fe16de"
+    "pollOptionId": "df11f6e7-9c47-4e7e-8bd7-c56d02cd0d55"
 }
